@@ -15,5 +15,25 @@ public class Main {
 
         int max = 2_147_483_647; //이렇게 숫자를 적을 수도 있다.
         System.out.println(max);
+
+        byte myMinByteValue = Byte.MIN_VALUE;
+        byte myMaxByteValue = Byte.MAX_VALUE;
+
+        System.out.println("Byte Minimum Value = " + myMinByteValue);
+        System.out.println("Byte Maximum Value = " + myMaxByteValue);
+
+        short myMinShortValue = Short.MIN_VALUE;
+        short myMaxShortValue = Short.MAX_VALUE;
+
+        System.out.println("Short Minimum Value = " + myMinShortValue);
+        System.out.println("Short Maximum Value = " + myMaxShortValue);
+
+        long myLongValue = 100L;
+        long mydLongValue = 2_147_483_648L;//뒤에 L을 붙이지 않으면 Int로 인식해서 에러를 만든다.
+        long myMinLongValue = Long.MIN_VALUE;
+        long myMaxLongValue = Long.MAX_VALUE;
+        System.out.println("Long Value = " + myMinLongValue);
+        System.out.println("Long Value = " + myMaxLongValue);
+        System.out.println("Long Value = " + myLongValue);
     }
 }
