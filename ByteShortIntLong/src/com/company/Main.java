@@ -35,5 +35,15 @@ public class Main {
         System.out.println("Long Value = " + myMinLongValue);
         System.out.println("Long Value = " + myMaxLongValue);
         System.out.println("Long Value = " + myLongValue);
+
+        int myTotal = (myMinIntValue / 2);
+        System.out.println("myTotal = " +myTotal);
+
+        //byte myNewByteValue = (myMinByteValue / 2); 이것은 오류가 난다. 이게 (myMin / 2)를 하면 자바에서 int로 인식하는데, byte에 넣으려고 하니까 문제가 생기는 거임.
+        /*casting -> 변수를 한타입에서 다른 타입으로 변환하는 거다. (byte) (myMinByteValue / 2)이렇게 쓰면 기존의 / 2로 만들어진 int값에서 byte로 변경이 된다.
+         */
+
+        byte myNewByteValue = (byte) (myMinByteValue / 2) ;
+        //short도 가능하고, 다른거 모두 가능하다.
     }
 }
