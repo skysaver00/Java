@@ -30,5 +30,10 @@ public class Main {
 
         boolean isAlien = false;
         if(isAlien == false) System.out.println("There is no alien!");
+
+        int topscore = 100;
+        if(topscore >= 100) {
+            System.out.println("You got the high score!");
+        }
     }
 }
