@@ -20,5 +20,15 @@ public class Main {
 
         int remain = 29 % 6;
         System.out.println(remain);
+
+        int t = 100;
+        System.out.println(t);
+        t++;
+        System.out.println(t);
+        t--;
+        System.out.println(t);
+
+        boolean isAlien = false;
+        if(isAlien == false) System.out.println("There is no alien!");
     }
 }
