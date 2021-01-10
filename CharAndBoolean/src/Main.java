@@ -14,5 +14,13 @@ public class Main {
         boolean t = true;
         boolean f = false;
         System.out.println(t + " " + f);
+
+        boolean isCar = false;
+        if(isCar) {
+            System.out.println("This is not supposed to show");
+        }
+
+        boolean wasCar = true;
+        wasCar = isCar? true : false;
     }
 }
