@@ -16,6 +16,24 @@ public class Main {
             System.out.println("This was executed!");
         }
 
+        if(gameOver == true) {
+            int finalScore = score + (levelCompleted * bonus);
+            System.out.println("Your final score was " + finalScore);
+        }
 
+        if(gameOver) {
+            System.out.println("This also prints out.");
+        }
+
+        //int savedScore = finalScore; 이거는 안된다. 당연히 finalScore는 if문 내에서만 유효하다.
+
+        levelCompleted = 8;
+        bonus = 200;
+        score = 10000;
+
+        if(gameOver == true) {
+            int finalScore = score + (levelCompleted * bonus);
+            System.out.println("Your final score was " + finalScore);
+        }
     }
 }
