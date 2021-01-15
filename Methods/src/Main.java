@@ -60,7 +60,7 @@ public class Main {
     }
 
     public static int calculateHighScorePosition(int score) {
-        if(score >= 1000) {
+        /*if(score >= 1000) { 이렇게 쓸 이유가 사실 없다. 어차피 위에서 계속 필터링 되면서 걸러지기 때문에 이렇게 &&을 쓸 필요 없이, 그냥 >=만 써도 된다.
             return 1;
         }
         else if(score < 1000 && score >= 500) {
@@ -69,6 +69,17 @@ public class Main {
         else if(score < 500 && score >= 100) {
             return 3;
         }
-        else return 4;
+        else return 4;*/
+
+        if(score >= 1000) {
+            return 1;
+        }
+        else if(score >= 500) {
+            return 2;
+        }
+        else if(score >= 100) {
+            return 3;
+        }
+        else return 4; //이렇게 쓰면 훨씬 더 가독성 있고, 더 짧은 코드를 완성할 수 있다.
     }
 }
