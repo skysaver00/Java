@@ -6,6 +6,19 @@ public class Main {
         calculateScore(); //이러면 자동으로 실행
         int value = calculateAnotherScore(true, 800, 5, 200);
         System.out.println("Your final score from calculateAnotherScore method was " + value);
+
+        displayHighScorePosition("luke", "sword master");
+        int d = calculateHighScorePosition(1500);
+        System.out.println(d + " score.");
+
+        d = calculateHighScorePosition(900);
+        System.out.println(d + " score.");
+
+        d = calculateHighScorePosition(400);
+        System.out.println(d + " score.");
+
+        d = calculateHighScorePosition(50);
+        System.out.println(d + " score.");
     }
 
     //메소드 내에는 메소드가 들어갈 수 없다!
@@ -40,5 +53,22 @@ public class Main {
 
 
         return -1; //-1은 전통적으로 오류를 뜻한다.
+    }
+
+    public static void displayHighScorePosition(String players, String position) {
+        System.out.println(players + " managed to get into position " + position + " on the high score table.");
+    }
+
+    public static int calculateHighScorePosition(int score) {
+        if(score >= 1000) {
+            return 1;
+        }
+        else if(score < 1000 && score >= 500) {
+            return 2;
+        }
+        else if(score < 500 && score >= 100) {
+            return 3;
+        }
+        else return 4;
     }
 }
