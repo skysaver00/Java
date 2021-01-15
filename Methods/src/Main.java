@@ -4,7 +4,8 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args) { //이거 사실 메소드다. main이라는 메소드 이름에서 해당 코드를 실행하는 것;
         calculateScore(); //이러면 자동으로 실행
-        calculateAnotherScore(true, 800, 5, 200);
+        int value = calculateAnotherScore(true, 800, 5, 200);
+        System.out.println("Your final score from calculateAnotherScore method was " + value);
     }
 
     //메소드 내에는 메소드가 들어갈 수 없다!
@@ -29,12 +30,15 @@ public class Main {
         }
     }
 
-    public static void calculateAnotherScore(boolean gameOver, int score, int levelCompleted, int bonus) {
+    public static int calculateAnotherScore(boolean gameOver, int score, int levelCompleted, int bonus) { //void는 아무것도 리턴하지 않는다는 뜻. void를 int, boolean등으로 고칠 수 있다.
 
         if(gameOver) {
             int finalScore = score + (levelCompleted * bonus);
             finalScore += 1000;
-            System.out.println("Your final score was " + finalScore);
+            return finalScore; //여기서 끝이 난다. gameOver로 들어오면 return을 보게 되면 무조건 그 return에서 끝나게 된다.
         }
+
+
+        return -1; //-1은 전통적으로 오류를 뜻한다.
     }
 }
