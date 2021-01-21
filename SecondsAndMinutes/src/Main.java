@@ -10,7 +10,7 @@ public class Main {
         int realhour = minutes / 60;
         int realminute = minutes % 60;
 
-        return realhour + "h " + realminute + "m " + seconds + "s";
+        return String.format("%02d", realhour) + "h " + String.format("%02d", realminute) + "m " + String.format("%02d", seconds) + "s";
     }
 
     public static String getDurationString(int seconds) {
