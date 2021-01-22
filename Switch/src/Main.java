@@ -1,3 +1,5 @@
+import java.util.Locale;
+
 public class Main {
     public static void main(String[] args) {
         int switchValue = 3;
@@ -22,5 +24,43 @@ public class Main {
         }
 
         //more code here!
+
+        char bet = 'A';
+
+        switch(bet) {
+            case 'A':
+                System.out.println("Alphabet was A");
+                break;
+
+            case 'B':
+                System.out.println("Alphabet was B");
+                break;
+
+            case 'C':
+                System.out.println("Alphabet was C");
+                break;
+
+            case 'D':
+                System.out.println("Alphabet was D");
+                break;
+
+            case 'E':
+                System.out.println("Alphabet was E");
+                break;
+        }
+
+        String month = "JaNuaRY";
+        switch(month.toLowerCase()) {
+            case "january":
+                System.out.println("Jan");
+                break;
+
+            case "june":
+                System.out.println("Jun");
+                break;
+
+            default:
+                System.out.println("Not sure");
+        }
     }
 }
