@@ -12,7 +12,7 @@ public class Main {
         }
 
         count = 1;
-        while(true) {
+        while(true) { //while은 시작하기 전에 항상 먼저 확인하고 시작한다.
             if(count == 6) break;
             System.out.println("Count value is " + count);
 
@@ -20,7 +20,7 @@ public class Main {
         }
 
         count = 1;
-        do {
+        do { //do while은 일단 한번 실행하고 확인한다.
             System.out.println("Count value is " + count);
             count++;
         }while(count != 6);
