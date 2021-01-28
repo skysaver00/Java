@@ -31,6 +31,7 @@ public class NumberToWords {
 
         if(number < 0) System.out.println("Invalid Value");
 
+        number = reverse(number);
         while(count > 0) {
             int digit = number % 10;
 
@@ -44,15 +45,9 @@ public class NumberToWords {
             else if(digit == 7) System.out.println("Seven");
             else if(digit == 8) System.out.println("Eight");
             else System.out.println("Nine");
+
+            number /= 10;
+            count--;
         }
-    }
-
-    public static void main(String[] args) {
-        System.out.println(getDigitCount(0));
-        System.out.println(getDigitCount(123));
-        System.out.println(getDigitCount(-12));
-        System.out.println(getDigitCount(5200));
-
-        System.out.println();
     }
 }
