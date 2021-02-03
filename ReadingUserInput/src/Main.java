@@ -8,6 +8,7 @@ public class Main {
         String name = scan.nextLine();
         System.out.print("Enter Your Year of Birth: ");
         int yearofbirth = scan.nextInt();
+        scan.nextLine();
 
         System.out.println("Your name is " + name);
         System.out.println("Your Birth Year is " + yearofbirth);
