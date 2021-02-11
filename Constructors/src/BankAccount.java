@@ -30,6 +30,14 @@ public class BankAccount {
         System.out.println("Account information added.");
     }
 
+    //code -> generate -> constructor로 해도 가능하다.
+    public BankAccount(String customerName, String email, String phoneNumber) {
+        this("00000000", 0.00000, customerName, email, phoneNumber);
+        this.customerName = customerName;
+        this.Email = email;
+        this.phoneNumber = phoneNumber;
+    }
+
     public void setAccountNumber(String Account) {
         this.accountNumber = Account;
     }
