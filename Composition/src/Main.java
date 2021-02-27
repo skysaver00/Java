@@ -10,5 +10,6 @@ public class Main {
         PC thePC = new PC(theCase, monitor, motherboard);
         thePC.getTheMonitor().drawPixelAt(1500, 1000, "red");
         thePC.getMotherboard().loadProgram("Windows 10");
+        thePC.getTheCase().pressPowerButton();
     }
 }
