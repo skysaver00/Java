@@ -1,6 +1,6 @@
 public class DeluxeBurger extends Hamburger{
-    public DeluxeBurger(String name, String meat, double price, String breadRollType) {
-        super("Deluxe", meat, 14.54, breadRollType);
+    public DeluxeBurger() {
+        super("Deluxe", "Sausage & Bacon", 14.54, "White roll");
         super.addHamburgerAddition1("Chips", 2.76);
         super.addHamburgerAddition2("Drink", 1.80);
     }
