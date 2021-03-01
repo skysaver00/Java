@@ -15,12 +15,20 @@ public class Car {
         return "Car -> startEngine()";
     }
 
-    public String accerlate() {
+    public String accelerate() {
         return "Car -> accelerate()";
     }
 
     public String brake() {
         return "Car -> brake()";
+    }
+
+    public int getCylinders() {
+        return cylinders;
+    }
+
+    public String getName() {
+        return name;
     }
 }
 
@@ -35,7 +43,7 @@ class Mitsubishi extends Car {
     }
 
     @Override
-    public String accerlate() {
+    public String accelerate() {
         return "Mitsubishi -> accelerate()";
     }
 
@@ -56,7 +64,7 @@ class Holden extends Car {
     }
 
     @Override
-    public String accerlate() {
+    public String accelerate() {
         return "Holden -> accelerate()";
     }
 
@@ -77,7 +85,7 @@ class Ford extends Car {
     }
 
     @Override
-    public String accerlate() {
+    public String accelerate() {
         return "Ford -> accelerate()";
     }
 
