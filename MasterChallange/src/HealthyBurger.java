@@ -12,18 +12,19 @@ public class HealthyBurger extends Hamburger{
         healthyExtra1Name = name;
         healthyExtra1Price = price;
 
-        System.out.println("Added " + name + "for an extra " + price);
+        System.out.println("Added " + name + " for an extra " + price);
     }
 
     public void addHealthyAddition2(String name, double price) {
         healthyExtra2Name = name;
         healthyExtra2Price = price;
 
-        System.out.println("Added " + name + "for an extra " + price);
+        System.out.println("Added " + name + " for an extra " + price);
     }
 
     @Override
     public double itemizeHamburger() {
-        return super.itemizeHamburger();
+        double hamburgerPrice = super.itemizeHamburger();
+        return hamburgerPrice + this.healthyExtra1Price + this.healthyExtra2Price;
     }
 }
