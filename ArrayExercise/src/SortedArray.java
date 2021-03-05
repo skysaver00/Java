@@ -1,10 +1,11 @@
 import java.util.Scanner;
 
 public class SortedArray {
-    public static int[] getIntegers(int[] array) {
+    public static int[] getIntegers(int size) {
         Scanner scan = new Scanner(System.in);
+        int[] array = new int[size];
 
-        for(int i = 0; i < 5; i++) {
+        for(int i = 0; i < array.length; i++) {
             array[i] = scan.nextInt();
         }
 
@@ -12,7 +13,7 @@ public class SortedArray {
     }
 
     public static void printArray(int[] array) {
-        for(int i = 0; i < 5; i++) {
+        for(int i = 0; i < array.length; i++) {
             System.out.println("Element " + i + " contents " + array[i]);
         }
     }
