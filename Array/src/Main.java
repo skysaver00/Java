@@ -29,6 +29,8 @@ public class Main {
         for(int i = 0; i < myIntegers.length; i++) {
             System.out.println(myIntegers[i]);
         }
+
+        System.out.println(getAverage(myIntegers));
     }
 
     public static void printArray(int[] array) {
@@ -57,5 +59,14 @@ public class Main {
         }
 
         return values;
+    }
+
+    public static double getAverage(int[] array) {
+        int sum = 0;
+        for(int i = 0; i < array.length; i++) {
+            sum += array[i];
+        }
+
+        return (double) sum / (double) array.length;
     }
 }
