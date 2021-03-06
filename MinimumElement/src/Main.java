@@ -20,8 +20,8 @@ public class Main {
 
     private static int findMin(int[] array) {
         int min = 99999999;
-        for(int i = 0; i < array.length; i++) {
-            if(min > array[i]) min = array[i];
+        for (int i = 0; i < array.length; i++) {
+            if (min > array[i]) min = array[i];
         }
 
         return min;
