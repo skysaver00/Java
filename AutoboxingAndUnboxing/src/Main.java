@@ -47,5 +47,23 @@ public class Main {
         for(int i = 0; i < 10; i++) {
             System.out.println(intClassArrayList.get(i).getMyValue());
         }
+
+        //Integer myValue = 51.2; //이거 당연히 안된다.
+        Integer myIntValue = 56 / 2;
+        int myInt = myIntValue.intValue();
+        System.out.println(" ===> " + myInt);
+
+        ArrayList<Double> myDoubleValues = new ArrayList<Double>();
+        for(double l = 0.0; l <= 10.0; l += 0.05) {
+            myDoubleValues.add(Double.valueOf(l));
+        }
+
+        for(int i = 0; i < myDoubleValues.size(); i++) {
+            if(i % 2 == 0) {
+                System.out.println(i + " --> " + myDoubleValues.get(i).doubleValue());
+            } else {
+                System.out.println(i + " -> " + myDoubleValues.get(i).doubleValue());
+            }
+        }
     }
 }
