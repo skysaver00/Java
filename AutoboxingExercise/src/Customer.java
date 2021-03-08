@@ -4,10 +4,10 @@ public class Customer {
     private String name;
     private ArrayList<Double> transactions;
 
-    public Customer(String name, Double initialTransaction) {
+    public Customer(String name, double initialTransaction) {
         this.name = name;
         this.transactions = new ArrayList<Double>();
-        addTransactions(initialTransaction);
+        addTransaction(initialTransaction);
     }
 
     public String getName() {
@@ -18,7 +18,7 @@ public class Customer {
         return transactions;
     }
 
-    public void addTransactions(double transaction) {
+    public void addTransaction(double transaction) {
         transactions.add(transaction);
     }
 }
