@@ -18,7 +18,7 @@ public class Branch {
     }
 
     public boolean newCustomer(String name, double initialTransaction) {
-        if(findCustomer(name) != null) {
+        if(findCustomer(name) == null) {
             this.customers.add(new Customer(name, initialTransaction));
             return true;
         } else {

@@ -12,7 +12,7 @@ public class Banking {
 
     public boolean addBranch(String name) {
         Branch branch = findBranch(name);
-        if(branch != null) {
+        if(branch == null) {
             this.branches.add(new Branch(name));
             return true;
         } else return false;
@@ -35,14 +35,14 @@ public class Banking {
     private Branch findBranch(String name) {
         for(int i = 0; i < branches.size(); i++) {
             Branch branch = branches.get(i);
-            if(branch.getName() == name) {
+            if(branch.getName().equals(name)) {
                 return branch;
             }
         }
         return null;
     }
 
-    public boolean liftCustomers(String name, boolean printTransaction) {
+    public boolean listCustomers(String name, boolean printTransaction) {
         Branch branch = findBranch(name);
         if(branch != null) {
             System.out.println("Customer details for branch " + name);
@@ -53,9 +53,13 @@ public class Banking {
                 System.out.println("Customer: " + customer1.getName() + "[" + (i + 1) + "]");
                 if(printTransaction) {
                     System.out.println("Transactions");
-                    for(int i = 0; i < )
+                    ArrayList<Double> transaction = customer1.getTransactions();
+                    for(int j = 0; j < transaction.size(); j++) {
+                        System.out.println("[" + (j + 1) + "] Amount " + transaction.get(j));
+                    }
                 }
             }
-        }
+            return true;
+        } else return false;
     }
 }
