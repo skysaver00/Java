@@ -21,6 +21,10 @@ public class Item {
         return price;
     }
 
+    public void modifyName(String name) {
+        this.name = name;
+    }
+
     public void addStock(int value) {
         this.stock += value;
     }
@@ -29,7 +33,7 @@ public class Item {
         this.stock = value;
     }
 
-    public void modifyPrice(int value) {
+    public void modifyPrice(double value) {
         this.price = value;
     }
 }
