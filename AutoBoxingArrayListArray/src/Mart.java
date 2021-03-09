@@ -10,10 +10,17 @@ public class Mart {
     }
 
     public boolean addBranch(String name) {
-        
+        Branch branch = findBranch(name);
+        if(branch == null) {
+            this.branchName.add(new Branch(name));
+            return true;
+        } else return false;
     }
 
-    public boolean findBranch() {
-
+    public Branch findBranch(String name) {
+        for(int i = 0; i < branchName.size(); i++) {
+            Branch branch = branchName.get(i);
+            if(branch.getName().equals(name)) return branch;
+        } return null;
     }
 }
