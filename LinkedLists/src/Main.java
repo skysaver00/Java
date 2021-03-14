@@ -66,6 +66,8 @@ public class Main {
         addInOrder(placesToVisit, "Alice Springs");
         addInOrder(placesToVisit, "Darwin");
         printList(placesToVisit);
+        visit(placesToVisit); //사실 현재 위치를 나타내는 link list function은 없다.
+        //문제점이 있는데 연결리스트는 루프가 가능하다. 예전에도 이런 문제가 있었다.
     }
 
     private static void printList(LinkedList<String> linkedList) {
@@ -106,6 +108,7 @@ public class Main {
     private static void visit(LinkedList cities) {
         Scanner scanner = new Scanner(System.in);
         boolean quit = false;
+        boolean goingForward = true;
 
         ListIterator<String> listIterator = cities.listIterator();
 
@@ -126,6 +129,12 @@ public class Main {
                     break;
 
                 case 1:
+                    if(!goingForward) {
+                        if(listIterator.hasNext()) {
+                            listIterator.next();
+                        }
+                        goingForward = true;
+                    }
                     if(listIterator.hasNext()) {
                         System.out.println("Now visiting " + listIterator.next());
                     } else {
@@ -134,6 +143,12 @@ public class Main {
                     break;
 
                 case 2:
+                    if(!goingForward) {
+                        if(listIterator.hasPrevious()) {
+                            listIterator.previous();
+                        }
+                        goingForward = false;
+                    }
                     if(listIterator.hasPrevious()) {
                         System.out.println("Now visiting " + listIterator.previous());
                     } else {
@@ -148,5 +163,11 @@ public class Main {
         }
     }
 
-    private static
+    private static void printMenu() {
+        System.out.println("Available actions:\npress");
+        System.out.println("0 - to quit\n" +
+                "1 - go to next city\n" +
+                "2 - go to previous city\n" +
+                "3 - print menu options");
+    }
 }
