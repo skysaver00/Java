@@ -33,7 +33,10 @@ public class MobilePhone implements ITelephone{
         if(phoneNumber == myNumber && isOn) {
             isRinging = true;
             System.out.println("Ring ring");
-        } else isRinging = false;
+        } else {
+            isRinging = false;
+            System.out.println("Phone not working");
+        }
         return false;
     }
 
