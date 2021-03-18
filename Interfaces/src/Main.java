@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        ITelephone = timsPhone;
+        ITelephone timsPhone;
         timsPhone = new DeskPhone(1234567890);
         timsPhone.powerOn();
     }
