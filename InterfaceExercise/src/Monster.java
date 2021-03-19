@@ -45,6 +45,10 @@ public class Monster implements ISaveable{
 
     @Override
     public String toString() {
-        return "Monster{" + "name=\'" + this.name + "\', hitpoints=" + this.hitPoints + ", strength=" + this.strength;
+        return "Monster{" +
+                "name='" + name + '\'' +
+                ", hitPoints=" + hitPoints +
+                ", strength=" + strength +
+                '}';
     }
 }
