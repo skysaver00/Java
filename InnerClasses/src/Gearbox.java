@@ -13,7 +13,7 @@ public class Gearbox {
         this.gears.add(neutral);
     }
 
-    
+
 
     public void operateClutch(boolean in) {
         this.clutchIsIn = in;
@@ -52,6 +52,10 @@ public class Gearbox {
 
             this.gearNumber = gearNumber;
             this.ratio = ratio;
+        }
+
+        public double getRatio() {
+            return ratio;
         }
 
         public double driveSpeed(int revs) {
