@@ -40,7 +40,13 @@ public class Main {
             }
         }
 
-        btnPrint.setOnClickListener(new ClickListener());
+        //아니면 이렇게 해도 된다.
+        btnPrint.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(String title) {
+                System.out.println(title + " was clicked");
+            }
+        });
         listen();
     }
 
