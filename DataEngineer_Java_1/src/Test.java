@@ -35,3 +35,16 @@ public class Test {
         System.out.printf("%d", sum); //17을 출력할 것이다.
     }
 }*/
+
+//198페이지 9번
+/*public class Test {
+    public static void main(String args[]) {
+        int a = 5, b = 9, c;
+        c = b % 5 < 5 ? 1 : 0; //% -> < -> ?:순서이다. b % 5 -> 4, 4 < 5 은 항상 맞다. 따라서 ? :중에 ?를 택해 c = 1이 된다.
+        c = c | c << 3; //c << 3하고 비트 연산자. c << 3 -> 1000 -> 8, 0001 | 1000 -> 1001 -> 9가 된다.
+        c = a < 5 || c >= 10 ? c - a : c + a; //a < 5아니다. c >= 10아니다. 따라서 :를 택해 c + a -> 9 + 5 -> 14가 된다.
+        System.out.printf("%d", c); //14를 출력
+    }
+}*/
+
+//
