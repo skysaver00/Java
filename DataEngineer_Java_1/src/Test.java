@@ -46,5 +46,3 @@ public class Test {
         System.out.printf("%d", c); //14를 출력
     }
 }*/
-
-//
