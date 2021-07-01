@@ -82,7 +82,7 @@ public class Test {
 }*/
 
 //204페이지 2번
-public class Test {
+/*public class Test {
     public static void main(String args[]) {
         int ary[][] = new int[3][5]; //1번, 2번 빈칸 -> i, j가 각각 들어가니까 i = 3, j = 5 따라서 3, 5가 들어간다.
         int n = 1;
@@ -94,4 +94,18 @@ public class Test {
             System.out.println();
         }
     }
-}
+}*/
+
+//205페이지 3번
+/*public class Test {
+    public static void main(String args[]) {
+        int i = 0, c = 0;
+        while(i < 10) {
+            i++;
+            c *= i;
+        }
+        System.out.println(c); //c = 0 * 0 -> 0 * 1 -> 0 * 2 -> 0 * 3 -> .... 0 * 9해서, 0은 단 한번 출력이 된다....
+    }
+}*/
+
+//205페이지 4번
