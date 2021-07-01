@@ -82,3 +82,16 @@ public class Test {
 }*/
 
 //204페이지 2번
+public class Test {
+    public static void main(String args[]) {
+        int ary[][] = new int[3][5]; //1번, 2번 빈칸 -> i, j가 각각 들어가니까 i = 3, j = 5 따라서 3, 5가 들어간다.
+        int n = 1;
+        for(int i = 0; i < 3; i++) {
+            for(int j = 0; j < 5; j++) {
+                ary[i][j] = j * 3 + i + 1;
+                System.out.print(ary[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
