@@ -48,20 +48,21 @@ public class Test {
 }*/
 
 //201페이지 예제
-public class Test {
+/*public class Test {
     public static void main(String args[]) {
         String str = "agile";
-        int x[] = {1, 2, 3, 4, 5};
-        char y[] = new char[5];
+        int x[] = {1, 2, 3, 4, 5}; //배열 5개가 만들어진다.
+        char y[] = new char[5]; //아직 채워지지 않은 문자열 배열이 만들어진다.
         int i = 0;
-        while(i < str.length()) {
-            y[i] = str.charAt(i);
+        while(i < str.length()) { //i < 5일동안, str.length = 5다.
+            y[i] = str.charAt(i); //y[0] = 'a', 'g', 'i', 'l', 'e'가 각각 들어가게 된다.
             i++;
         }
         for(int p : x) {
             i--;
-            System.out.print(y[i]);
-            System.out.print(p + " ");
+            System.out.print(y[i]); //e, l, i, g, a가 출력되고
+            System.out.print(p + " "); //1, 2, 3, 4, 5가 같이 출력된다.
         }
     }
-}
+}*/
+
