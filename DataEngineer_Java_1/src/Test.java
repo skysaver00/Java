@@ -66,3 +66,19 @@ public class Test {
     }
 }*/
 
+//204페이지 1번
+/*public class Test {
+    public static void main(String args[]) {
+        int a[] = new int[8];
+        int i = 0;
+        int n = 10;
+        while(n != 0) { //1번 빈칸 n이 0이 될때까지 n을 2진수로 저장해야한다.
+            a[i++] = n % 2; //2번 빈칸 n % 2가 들어간다. 이렇게 하면 n의 나머지를 바로 보고 저장 가능.
+            n /= 2;
+        }
+        for(i = 7; i >= 0; i--)
+            System.out.print(a[i]); //이거의 답은 a[3]까지 0 -> 00001010이 된다.
+    }
+}*/
+
+//204페이지 2번
