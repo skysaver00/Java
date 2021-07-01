@@ -109,3 +109,14 @@ public class Test {
 }*/
 
 //205페이지 4번
+/*public class Test {
+    public static void main(String args[]) {
+        int a = 0, sum = 0;
+        while(a < 10) {
+            a++; //a = 1, 2, 3, ..... 9, 10까지 10이되고 다시 맨 위로 올라가면, 반복문을 탈출한다.
+            if(a % 2 == 1) continue; //a % 2 == 1 -> 1, 3, 5, 7, 9는 continue되서 while맨 위로 되돌아간다.
+            sum += a; //여기까지 오는 경우는 a = 2, 4, 6, 8, 10일때, sum = 30이 된다.
+        }
+        System.out.println(sum); //30을 출력한다.
+    }
+}*/
