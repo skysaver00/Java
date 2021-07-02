@@ -121,12 +121,28 @@ public class Test {
     }
 }*/
 
-//209페이지 10번
-public class Test {
+//208페이지 10번
+/*public class Test {
     public static void main(String[] args) {
         int i, hap = 0;
-        for(i = 1; i <= 10; ++i)
-            hap += i; //i = 2, 0 + 2 -> 3, 2 + 3 -> 4, 5 + 4 -> .... 2 ~ 10 + 11, 11
-        System.out.printf("%d, %d\n", i, hap); //11, 55출력
+        for(i = 1; i <= 10; ++i) {
+            System.out.println(i);
+            hap += i; //이거 조심해야한다. ++i라 하더라도, 1, 2, 3, 4, 5, 6, 즉 1부터 더해진다. 10까지 더하게 된다.
+        }
+        System.out.printf("%d, %d\n", i, hap); //11, 55출력. 하지만 마지막 i의 종착은 11이다.
     }
-}
+}*/
+
+//209페이지 11번
+/*public class Test {
+    public static void main(String[] args) {
+        int[][] a = {{11, 12, 13, 14}, {21, 22, 23, 24}};
+        int hap = 0;
+        for(int i[]: a) //범위 i[]기준이니까, [0][], [1][]을 돈다.
+        {
+            for(int j : i) //[0][]에는 4개 [1][]에도 4개
+                hap = hap + j; //11 + 12 + 13 + 14 + 21 + 22 + 23 + 24 => 40 + 10 +80 + 10
+        }
+        System.out.printf("%d", hap); //140이 정답.
+    }
+}*/
