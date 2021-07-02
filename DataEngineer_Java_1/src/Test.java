@@ -120,3 +120,13 @@ public class Test {
         System.out.println(sum); //30을 출력한다.
     }
 }*/
+
+//209페이지 10번
+public class Test {
+    public static void main(String[] args) {
+        int i, hap = 0;
+        for(i = 1; i <= 10; ++i)
+            hap += i; //i = 2, 0 + 2 -> 3, 2 + 3 -> 4, 5 + 4 -> .... 2 ~ 10 + 11, 11
+        System.out.printf("%d, %d\n", i, hap); //11, 55출력
+    }
+}
