@@ -133,7 +133,7 @@ public class Test {
     }
 }*/
 
-//209페이지 11번
+//209페이지 12번
 /*public class Test {
     public static void main(String[] args) {
         int[][] a = {{11, 12, 13, 14}, {21, 22, 23, 24}};
@@ -144,5 +144,27 @@ public class Test {
                 hap = hap + j; //11 + 12 + 13 + 14 + 21 + 22 + 23 + 24 => 40 + 10 +80 + 10
         }
         System.out.printf("%d", hap); //140이 정답.
+    }
+}*/
+
+//210페이지 13번
+/*import java.util.Scanner;
+public class Test {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int a = scan.nextInt(); //8들어오고
+        int b = scan.nextInt(); //3들어온다.
+        char c = 'G';
+
+        if(a > 10 && b < 10) { //틀림
+            if(a - b < 5 || a > 15)
+                c = 'X';
+        } else if(a > 5 && b < 5) { //맞음
+            if(a - b < 3 || b > 0) //a - b = 5 < 3 || b > 3 -> 맞음
+                c = 'Y'; //c = Y
+        } else
+            c = 'Z';
+        System.out.printf("%c", c); //Y출력
+        scan.close();
     }
 }*/
