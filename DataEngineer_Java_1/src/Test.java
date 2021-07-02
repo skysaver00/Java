@@ -168,3 +168,19 @@ public class Test {
         scan.close();
     }
 }*/
+
+//211페이지 14번
+/*public class Test{
+    public static void main(String[] args) {
+        String str = "Programming";
+        int n = str.length(); //Programming은 11글자
+        char[] st = new char [n]; //st에 11만큼 들어감.
+        n--;
+        for(int k = n; k >= 0; k--) {
+            st[n - k] = str.charAt(k); //이거 뒤집어진다.
+        }
+        for(char k : st) {
+            System.out.printf("%c", k); //k : st만큼 출력 //gnimmargorP가 될거같다.
+        }
+    }
+}*/
