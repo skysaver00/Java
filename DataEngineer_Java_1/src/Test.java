@@ -215,7 +215,7 @@ class ClassA {
 
 class ClassB extends ClassA {
     ClassB() {
-        super();
+        //super();
         System.out.print('D');
     }
     void prn() {
