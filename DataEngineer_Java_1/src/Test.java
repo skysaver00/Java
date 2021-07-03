@@ -186,7 +186,7 @@ public class Test {
 }*/
 
 //225페이지 예제
-class ClassA {
+/*class ClassA {
     int a = 10;
     int funcAdd(int x, int y) {
         return x + y + a;
@@ -199,5 +199,38 @@ public class Test {
         ClassA cal = new ClassA();
         r = cal.funcAdd(x, y);
         System.out.println(r);
+    }
+}*/
+
+//227페이지 예제
+class ClassA {
+    ClassA() {
+        System.out.print('A');
+        this.prn();
+    }
+    void prn() {
+        System.out.print('B');
+    }
+}
+
+class ClassB extends ClassA {
+    ClassB() {
+        super();
+        System.out.print('D');
+    }
+    void prn() {
+        System.out.print('E');
+    }
+    void prn(int x) {
+        System.out.print(x);
+    }
+}
+
+public class Test {
+    public static void main(String[] args) {
+        int x = 7;
+        ClassB cal = new ClassB();
+        cal.prn(x);
+        cal.prn();
     }
 }
